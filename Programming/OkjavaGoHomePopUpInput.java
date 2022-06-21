@@ -1,13 +1,14 @@
 import org.opentutorials.iot.Security;
 import org.opentutorials.iot.Elevator;
 import org.opentutorials.iot.Lighting;
+import javax.swing.JOptionPane;
 
-
-public class OkjavaGoHome {
+public class OkjavaGoHomePopUpInput {
 
 	public static void main(String[] args) {
-
-		String roomID = "JAVA APT 503";
+		
+		String id = JOptionPane.showInputDialog("Enter your home ID(Address)");
+		String roomID = id;
 	
 		// Elevator call
 		Elevator myElevator = new Elevator(roomID);
